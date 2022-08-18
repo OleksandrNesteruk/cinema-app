@@ -1,15 +1,14 @@
-package mate.academy.spring.service.impl;
+package cinema.service.impl;
 
-import mate.academy.spring.dao.OrderDao;
-import mate.academy.spring.model.Order;
-import mate.academy.spring.model.ShoppingCart;
-import mate.academy.spring.model.User;
-import mate.academy.spring.service.OrderService;
-import mate.academy.spring.service.ShoppingCartService;
-import org.springframework.stereotype.Service;
-
+import cinema.dao.OrderDao;
+import cinema.model.Order;
+import cinema.model.ShoppingCart;
+import cinema.model.User;
+import cinema.service.OrderService;
+import cinema.service.ShoppingCartService;
 import java.time.LocalDateTime;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 @Service
 public class OrderServiceImpl implements OrderService {

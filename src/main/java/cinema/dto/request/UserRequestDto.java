@@ -1,8 +1,7 @@
-package mate.academy.spring.dto.request;
+package cinema.dto.request;
 
-import mate.academy.spring.lib.FieldsValueMatch;
-import mate.academy.spring.lib.ValidEmail;
-
+import cinema.lib.FieldsValueMatch;
+import cinema.lib.ValidEmail;
 import javax.validation.constraints.Size;
 
 @FieldsValueMatch(

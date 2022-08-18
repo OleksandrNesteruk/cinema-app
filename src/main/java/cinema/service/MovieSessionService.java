@@ -1,7 +1,6 @@
-package mate.academy.spring.service;
+package cinema.service;
 
-import mate.academy.spring.model.MovieSession;
-
+import cinema.model.MovieSession;
 import java.time.LocalDate;
 import java.util.List;
 

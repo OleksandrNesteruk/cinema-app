@@ -1,14 +1,13 @@
-package mate.academy.spring.service.impl;
+package cinema.service.impl;
 
-import mate.academy.spring.model.Role;
-import mate.academy.spring.model.User;
-import mate.academy.spring.service.AuthenticationService;
-import mate.academy.spring.service.RoleService;
-import mate.academy.spring.service.ShoppingCartService;
-import mate.academy.spring.service.UserService;
-import org.springframework.stereotype.Service;
-
+import cinema.model.Role;
+import cinema.model.User;
+import cinema.service.AuthenticationService;
+import cinema.service.RoleService;
+import cinema.service.ShoppingCartService;
+import cinema.service.UserService;
 import java.util.Set;
+import org.springframework.stereotype.Service;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {

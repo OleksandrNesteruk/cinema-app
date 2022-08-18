@@ -1,7 +1,6 @@
-package mate.academy.spring.service;
+package cinema.service;
 
-import mate.academy.spring.model.User;
-
+import cinema.model.User;
 import java.util.Optional;
 
 public interface UserService {

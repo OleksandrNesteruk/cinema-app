@@ -1,4 +1,4 @@
-package mate.academy.spring.config;
+package cinema.config;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

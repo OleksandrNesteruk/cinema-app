@@ -1,6 +1,6 @@
-package mate.academy.spring.service;
+package cinema.service;
 
-import mate.academy.spring.model.Role;
+import cinema.model.Role;
 
 public interface RoleService {
     Role add(Role role);

@@ -1,13 +1,12 @@
-package mate.academy.spring.init;
+package cinema.init;
 
-import mate.academy.spring.model.Role;
-import mate.academy.spring.model.User;
-import mate.academy.spring.service.RoleService;
-import mate.academy.spring.service.UserService;
-import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
+import cinema.model.Role;
+import cinema.model.User;
+import cinema.service.RoleService;
+import cinema.service.UserService;
 import java.util.Set;
+import javax.annotation.PostConstruct;
+import org.springframework.stereotype.Component;
 
 @Component
 public class DataInitializer {

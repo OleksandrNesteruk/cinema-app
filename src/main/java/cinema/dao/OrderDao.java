@@ -1,8 +1,7 @@
-package mate.academy.spring.dao;
+package cinema.dao;
 
-import mate.academy.spring.model.Order;
-import mate.academy.spring.model.User;
-
+import cinema.model.Order;
+import cinema.model.User;
 import java.util.List;
 
 public interface OrderDao {
