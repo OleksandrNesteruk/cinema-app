@@ -1,7 +1,6 @@
-package mate.academy.spring.dao;
+package cinema.dao;
 
-import mate.academy.spring.model.CinemaHall;
-
+import cinema.model.CinemaHall;
 import java.util.List;
 import java.util.Optional;
 

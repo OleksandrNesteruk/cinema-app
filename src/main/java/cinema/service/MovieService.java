@@ -1,7 +1,6 @@
-package mate.academy.spring.service;
+package cinema.service;
 
-import mate.academy.spring.model.Movie;
-
+import cinema.model.Movie;
 import java.util.List;
 
 public interface MovieService {

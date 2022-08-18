@@ -1,16 +1,15 @@
-package mate.academy.spring.dao.impl;
+package cinema.dao.impl;
 
-import mate.academy.spring.dao.AbstractDao;
-import mate.academy.spring.dao.OrderDao;
-import mate.academy.spring.exception.DataProcessingException;
-import mate.academy.spring.model.Order;
-import mate.academy.spring.model.User;
+import cinema.dao.AbstractDao;
+import cinema.dao.OrderDao;
+import cinema.exception.DataProcessingException;
+import cinema.model.Order;
+import cinema.model.User;
+import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 @Repository
 public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao {

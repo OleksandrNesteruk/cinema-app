@@ -1,20 +1,19 @@
-package mate.academy.spring.dao.impl;
+package cinema.dao.impl;
 
-import mate.academy.spring.dao.AbstractDao;
-import mate.academy.spring.dao.RoleDao;
-import mate.academy.spring.exception.DataProcessingException;
-import mate.academy.spring.model.Role;
+import cinema.dao.AbstractDao;
+import cinema.dao.RoleDao;
+import cinema.exception.DataProcessingException;
+import cinema.model.Role;
+import java.util.Optional;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
 @Repository
 public class RoleDaoImpl extends AbstractDao<Role> implements RoleDao {
-    public RoleDaoImpl(SessionFactory factory, Class<Role> clazz) {
-        super(factory, clazz);
+    public RoleDaoImpl(SessionFactory factory) {
+        super(factory, Role.class);
     }
 
     @Override

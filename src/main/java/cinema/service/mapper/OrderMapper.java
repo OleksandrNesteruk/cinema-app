@@ -1,11 +1,10 @@
-package mate.academy.spring.service.mapper;
+package cinema.service.mapper;
 
-import mate.academy.spring.dto.response.OrderResponseDto;
-import mate.academy.spring.model.Order;
-import mate.academy.spring.model.Ticket;
-import org.springframework.stereotype.Component;
-
+import cinema.dto.response.OrderResponseDto;
+import cinema.model.Order;
+import cinema.model.Ticket;
 import java.util.stream.Collectors;
+import org.springframework.stereotype.Component;
 
 @Component
 public class OrderMapper implements ResponseDtoMapper<OrderResponseDto, Order> {
