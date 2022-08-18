@@ -1,16 +1,19 @@
-package cinema.service.impl;
+package mate.academy.spring.service.impl;
 
-import cinema.dao.CinemaHallDao;
-import cinema.lib.Inject;
-import cinema.lib.Service;
-import cinema.model.CinemaHall;
-import cinema.service.CinemaHallService;
+import mate.academy.spring.dao.CinemaHallDao;
+import mate.academy.spring.model.CinemaHall;
+import mate.academy.spring.service.CinemaHallService;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
 public class CinemaHallServiceImpl implements CinemaHallService {
-    @Inject
-    private CinemaHallDao cinemaHallDao;
+    private final CinemaHallDao cinemaHallDao;
+
+    public CinemaHallServiceImpl(CinemaHallDao cinemaHallDao) {
+        this.cinemaHallDao = cinemaHallDao;
+    }
 
     @Override
     public CinemaHall add(CinemaHall cinemaHall) {
@@ -19,7 +22,8 @@ public class CinemaHallServiceImpl implements CinemaHallService {
 
     @Override
     public CinemaHall get(Long id) {
-        return cinemaHallDao.get(id).get();
+        return cinemaHallDao.get(id).orElseThrow(
+                () -> new RuntimeException("Can't get cinema hall by id " + id));
     }
 
     @Override
