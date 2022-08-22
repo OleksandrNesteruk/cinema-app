@@ -23,7 +23,7 @@ Project has a three-tier architecture:
 - Service layer: include business logic.
 
 ## Database structure
-![sheme.png](scheme.png)
+![scheme.png](scheme.png)
 
 ## Used technologies
 * Java (11);
